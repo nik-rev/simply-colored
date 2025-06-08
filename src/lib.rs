@@ -2,7 +2,7 @@
 #![no_std]
 
 /// Reset styling
-pub const OFF: &str = "\x1b[0m";
+pub const RESET: &str = "\x1b[0m";
 
 /// Following text will be bold
 pub const BOLD: &str = "\x1b[1m";
@@ -16,7 +16,7 @@ pub const NO_DIM: &str = "\x1b[22m";
 
 /// Following text will be italic
 pub const ITALIC: &str = "\x1b[3m";
-/// Following text will NOT be dim
+/// Following text will NOT be italic
 pub const NO_ITALIC: &str = "\x1b[23m";
 
 /// Following text will be underlined
@@ -40,9 +40,9 @@ pub const HIDE: &str = "\x1b[8m";
 pub const NO_HIDE: &str = "\x1b[28m";
 
 /// Following text will be crossed out
-pub const CROSS: &str = "\x1b[8m";
+pub const STRIKETHROUGH: &str = "\x1b[9m";
 /// Following text will NOT be crossed out
-pub const NO_CROSS: &str = "\x1b[28m";
+pub const NO_STRIKETHROUGH: &str = "\x1b[29m";
 
 /// Set color of text to dim black
 pub const DIM_BLACK: &str = "\x1b[30m";
