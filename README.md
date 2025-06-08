@@ -56,16 +56,16 @@ println!("\
 
 ## Effects
 
-| Effect                    | Type                       |
-| ------                    | -----                      |
-| *Italic*                  | `{DIM}Hello, world!`       |
-| **Bold**                  | `{BOLD}Hello, world!`      |
-| <u>Underline</u>          | `{UNDERLINE}Hello, world!` |
-| Blink                     | `{BLINK}Hello, world!`     |
-| Reverse                   | `{REVERSE}Hello, world!`   |
-| <del>Strikethrough</del>  | `{CROSS}Hello, world!`     |
-| Dim                       | `{DIM}Hello, world!`       |
-| Hide                      | `{HIDE}Hello, world!`      |
-| Reset all styles          | `{RESET}Hello, world!`     |
+| Effect                    | Type                               |
+| ------                    | -----                              |
+| *Italic*                  | `{ITALIC}Hello, world!`            |
+| **Bold**                  | `{BOLD}Hello, world!`              |
+| <u>Underline</u>          | `{UNDERLINE}Hello, world!`         |
+| Blink                     | `{BLINK}Hello, world!`             |
+| Reverse                   | `{REVERSE}Hello, world!`           |
+| <del>Strikethrough</del>  | `{STRIKETHROUGH}Hello, world!`     |
+| Dim                       | `{DIM}Hello, world!`               |
+| Hide                      | `{HIDE}Hello, world!`              |
+| Reset all styles          | `{RESET}Hello, world!`             |
 
 All effects can be prefixed with `NO_` to disable e.g. `NO_BOLD`.
