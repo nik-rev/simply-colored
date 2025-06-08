@@ -65,3 +65,21 @@ println!("{BLUE}{BOLD}Simply colored!")
 | Reset all styles          | `{RESET}Simply colored!`             |
 
 All effects can be prefixed with `NO_` to disable e.g. `NO_BOLD`.
+
+## Extra
+
+If you want links in the terminal, use:
+
+```rs
+fn hyperlink<D: core::fmt::Display>(link: D, text: D) -> String {
+    format!("\x1b]8;;{link}\x1b\\{text}\x1b]8;;\x1b\\")
+}
+
+println!(
+    "Check out simply_colored on {}!",
+    hyperlink(
+        "https://github.com/nik-rev/simply-colored",
+        "GitHub"
+    )
+);
+```
