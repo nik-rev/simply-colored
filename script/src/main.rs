@@ -77,14 +77,6 @@ fn main() -> Result<()> {
             .save(&swatch_path)
             .map_err(|err| format!("failed to save swatch to {swatch_path:?}: {err}"))?;
 
-        const TEXT_CONTAINER_WIDTH: u32 = 196;
-        const TEXT_CONTAINER_HEIGHT: u32 = 16;
-        let mut text = image::RgbImage::from_pixel(
-            TEXT_CONTAINER_WIDTH,
-            TEXT_CONTAINER_HEIGHT,
-            Rgb(color.rgb()),
-        );
-
         macro_rules! font_path {
             () => {
                 "../../assets/JetBrainsMono-Regular.ttf"
@@ -94,13 +86,28 @@ fn main() -> Result<()> {
         let font = ab_glyph::FontArc::try_from_slice(include_bytes!(font_path!()))
             .map_err(|err| format!("failed to load font at {}: {err}", font_path!()))?;
 
+        const TEXT_CONTAINER_WIDTH: u32 = 196;
+        const TEXT_CONTAINER_HEIGHT: u32 = 16;
+
+        let mut bg_text = image::RgbImage::from_pixel(
+            TEXT_CONTAINER_WIDTH,
+            TEXT_CONTAINER_HEIGHT,
+            Rgb(color.rgb()),
+        );
+
+        let mut fg_text = image::RgbImage::from_pixel(
+            TEXT_CONTAINER_WIDTH,
+            TEXT_CONTAINER_HEIGHT,
+            Rgb(color.text_color()),
+        );
+
         const TEXT_SCALE: f32 = 18.0;
         const TEXT: &str = "Hello, world!";
 
         let (text_width, _text_height) = text_size(TEXT_SCALE, &font, TEXT);
 
         draw_text_mut(
-            &mut text,
+            &mut bg_text,
             Rgb(color.text_color()),
             (TEXT_CONTAINER_WIDTH / 2 - text_width / 2) as i32,
             0,
@@ -109,12 +116,30 @@ fn main() -> Result<()> {
             TEXT,
         );
 
-        let text_path = assets_path.join(format!(
-            "text_{color}_{TEXT_CONTAINER_WIDTH}x{TEXT_CONTAINER_HEIGHT}.png"
+        draw_text_mut(
+            &mut fg_text,
+            Rgb(color.rgb()),
+            (TEXT_CONTAINER_WIDTH / 2 - text_width / 2) as i32,
+            0,
+            TEXT_SCALE,
+            &font,
+            TEXT,
+        );
+
+        let bg_text_path = assets_path.join(format!(
+            "bg_text_{color}_{TEXT_CONTAINER_WIDTH}x{TEXT_CONTAINER_HEIGHT}.png"
+        ));
+        let fg_text_path = assets_path.join(format!(
+            "fg_text_{color}_{TEXT_CONTAINER_WIDTH}x{TEXT_CONTAINER_HEIGHT}.png"
         ));
 
-        text.save(&text_path)
-            .map_err(|err| format!("failed to save text to {text_path:?}: {err}"))?;
+        bg_text
+            .save(&bg_text_path)
+            .map_err(|err| format!("failed to save text to {bg_text_path:?}: {err}"))?;
+
+        fg_text
+            .save(&fg_text_path)
+            .map_err(|err| format!("failed to save text to {fg_text_path:?}: {err}"))?;
     }
 
     Ok(())
