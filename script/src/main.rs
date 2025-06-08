@@ -31,8 +31,8 @@ impl Color {
     /// What color should text be, if `self` is the background
     fn text_color(self) -> [u8; 3] {
         match self {
-            Color::Black | Color::DimBlack => [29, 31, 33],
-            _ => [197, 200, 198],
+            Color::Black | Color::DimBlack => [197, 200, 198],
+            _ => [29, 31, 33],
         }
     }
 
