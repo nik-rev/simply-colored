@@ -70,7 +70,7 @@ All effects can be prefixed with `NO_` to disable e.g. `NO_BOLD`.
 
 If you want links in the terminal, use:
 
-```rs
+```rust
 fn hyperlink<D: core::fmt::Display>(link: D, text: D) -> String {
     format!("\x1b]8;;{link}\x1b\\{text}\x1b]8;;\x1b\\")
 }
