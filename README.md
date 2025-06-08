@@ -12,8 +12,6 @@ println!("\
 ")
 ```
 
-The crate's code is essentially 50 lines, containing only 3 helper functions with everything else being a `const`ant that you can easily use in format strings!
-
 ## Foreground
 
 | Color                                                  | Type                                   | To get                                                                                                               |
@@ -35,7 +33,7 @@ The crate's code is essentially 50 lines, containing only 3 helper functions wit
 | ![Dim white](assets/swatch_dim_white_16x16.png)        | `{DIM_WHITE}Hello, world!`             | ![Dim white text color in terminal](assets/fg_text_dim_white_164x16.png)                                             |
 | ![Dim black](assets/swatch_dim_black_16x16.png)        | `{DIM_BLACK}Hello, world!`             | ![Dim black text color in terminal](assets/fg_text_dim_black_164x16.png)                                             |
 
-## Background Text
+## Background
 
 | Color                                                  | Type                                   |  To get                                                                                                              |
 | -----                                                  | ------------------                     | -------                                                                                                              |
@@ -58,3 +56,16 @@ The crate's code is essentially 50 lines, containing only 3 helper functions wit
 
 ## Effects
 
+| Effect | Type                   |
+| ------ | -----                  |
+| *Italic* | `{DIM}Hello, world!`   |
+| **Bold** | `{BOLD}Hello, world!` |
+| <u>Underline</u> | `{UNDERLINE}Hello, world!` |
+| Blink  | `{BLINK}Hello, world!` |
+| Reverse  | `{REVERSE}Hello, world!` |
+| <del>Strikethrough</del>  | `{CROSS}Hello, world!` |
+| Dim    | `{DIM}Hello, world!`   |
+| Hide   | `{HIDE}Hello, world!`  |
+| Reset all styles   | `{RESET}Hello, world!`  |
+
+All effects can be prefixed with `NO_` to disable e.g. `NO_BOLD`.
