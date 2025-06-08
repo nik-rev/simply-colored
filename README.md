@@ -20,7 +20,7 @@ The crate's code is essentially 50 lines, containing only 3 helper functions wit
 | -----                                              | ------------------       | -------                                                                                                              |
 | ![Green](assets/swatch_green_16x16.png)     | `{GREEN}Hello, world!`   | ![Green text color in terminal](assets/fg_text_green_196x16.png)     |
 | ![Yellow](assets/swatch_yellow_16x16.png)   | `{YELLOW}Hello, world!`  | ![Yellow text color in terminal](assets/fg_text_yellow_196x16.png)   |
-| ![Red](assets/swatch_red_16x16.png)         | `{RED}Hello, world!`     | ![Red text color in terminal](assets/bg_text_red_196x16.png)         |
+| ![Red](assets/swatch_red_16x16.png)         | `{RED}Hello, world!`     | ![Red text color in terminal](assets/fg_text_red_196x16.png)         |
 | ![Magenta](assets/swatch_magenta_16x16.png) | `{MAGENTA}Hello, world!` | ![Magenta text color in terminal](assets/fg_text_magenta_196x16.png) |
 | ![Blue](assets/swatch_blue_16x16.png)       | `{BLUE}Hello, world!`    | ![Blue text color in terminal](assets/fg_text_blue_196x16.png)       |
 | ![Cyan](assets/swatch_cyan_16x16.png)       | `{CYAN}Hello, world!`    | ![Cyan text color in terminal](assets/fg_text_cyan_196x16.png)       |
