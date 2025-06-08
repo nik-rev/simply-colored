@@ -2,11 +2,10 @@
 name = "simply_colored"
 version = "0.1.0"
 edition = "2024"
+repository = "https://github.com/nik-rev/simply-colored"
+homepage = "https://github.com/nik-rev/simply-colored"
 description = "The simplest crate in existence for terminal colors"
 keywords = ["ansi", "terminal", "color", "no_std"]
 license = "MIT or Apache-2.0"
-
-[workspace]
-members = [".", "script"]
 
 [dependencies]
