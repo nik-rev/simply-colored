@@ -1,0 +1,9 @@
+[package]
+name = "simply_colored"
+version = "0.1.0"
+edition = "2024"
+
+[workspace]
+members = [".", "script"]
+
+[dependencies]

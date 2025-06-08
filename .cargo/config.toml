@@ -1,0 +1,2 @@
+[alias]
+script = "run --manifest-path ./script/Cargo.toml --"
