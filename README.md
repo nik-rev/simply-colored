@@ -18,22 +18,22 @@ The crate's code is essentially 50 lines, containing only 3 helper functions wit
 
 | Color                                              | Example                  | Output                                                                                                               |
 | -----                                              | ------------------       | -------                                                                                                              |
-| ![Green](assets/swatch_green_16x16.png)     | `format!("{GREEN}Hello, world!")`   | ![Bright green text color in terminal](assets/text_green_16x16.png)     |
-| ![Yellow](assets/swatch_yellow_16x16.png)   | `format!("{YELLOW}Hello, world!")`  | ![Bright yellow text color in terminal](assets/text_yellow_16x16.png)   |
-| ![Red](assets/swatch_red_16x16.png)         | `format!("{RED}Hello, world!")`     | ![Bright red text color in terminal](assets/text_red_16x16.png)         |
-| ![Magenta](assets/swatch_magenta_16x16.png) | `format!("{MAGENTA}Hello, world!")` | ![Bright magenta text color in terminal](assets/text_magenta_16x16.png) |
-| ![Blue](assets/swatch_blue_16x16.png)       | `format!("{BLUE}Hello, world!")`    | ![Bright blue text color in terminal](assets/text_blue_16x16.png)       |
-| ![Cyan](assets/swatch_cyan_16x16.png)       | `format!("{CYAN}Hello, world!")`    | ![Bright cyan text color in terminal](assets/text_cyan_16x16.png)       |
-| ![White](assets/swatch_white_16x16.png)     | `format!("{WHITE}Hello, world!")`   | ![Bright white text color in terminal](assets/text_white_16x16.png)     |
-| ![Black](assets/swatch_black_16x16.png)     | `format!("{BLACK}Hello, world!")`   | ![Bright black text color in terminal](assets/text_black_16x16.png)     |
-| ![Dim green](assets/swatch_dim_green_16x16.png)        | `format!("{DIM_GREEN}Hello, world!")`          | ![Green text color in terminal](assets/text_dim_green_16x16.png)                   |
-| ![Dim yellow](assets/swatch_dim_yellow_16x16.png)      | `format!("{DIM_YELLOW}Hello, world!")`         | ![Yellow text color in terminal](assets/text_dim_yellow_16x16.png)                 |
-| ![Dim red](assets/swatch_dim_red_16x16.png)            | `format!("{DIM_RED}Hello, world!")`            | ![Red text color in terminal](assets/text_dim_red_16x16.png)                       |
-| ![Dim magenta](assets/swatch_dim_magenta_16x16.png)    | `format!("{DIM_MAGENTA}Hello, world!")`        | ![Magenta text color in terminal](assets/text_dim_magenta_16x16.png)               |
-| ![Dim blue](assets/swatch_dim_blue_16x16.png)          | `format!("{DIM_BLUE}Hello, world!")`           | ![Blue text color in terminal](assets/text_dim_blue_16x16.png)                     |
-| ![Dim cyan](assets/swatch_dim_cyan_16x16.png)          | `format!("{DIM_CYAN}Hello, world!")`           | ![Cyan text color in terminal](assets/text_dim_cyan_16x16.png)                     |
-| ![Dim white](assets/swatch_dim_white_16x16.png)        | `format!("{DIM_WHITE}Hello, world!")`          | ![White text color in terminal](assets/text_dim_white_16x16.png)                   |
-| ![Dim black](assets/swatch_dim_black_16x16.png)        | `format!("{DIM_BLACK}Hello, world!")`          | ![Black text color in terminal](assets/text_dim_black_16x16.png)                   |
+| ![Green](assets/swatch_green_16x16.png)     | `format!("{GREEN}Hello, world!")`   | ![Bright green text color in terminal](assets/text_green_196x16.png)     |
+| ![Yellow](assets/swatch_yellow_16x16.png)   | `format!("{YELLOW}Hello, world!")`  | ![Bright yellow text color in terminal](assets/text_yellow_196x16.png)   |
+| ![Red](assets/swatch_red_16x16.png)         | `format!("{RED}Hello, world!")`     | ![Bright red text color in terminal](assets/text_red_196x16.png)         |
+| ![Magenta](assets/swatch_magenta_16x16.png) | `format!("{MAGENTA}Hello, world!")` | ![Bright magenta text color in terminal](assets/text_magenta_196x16.png) |
+| ![Blue](assets/swatch_blue_16x16.png)       | `format!("{BLUE}Hello, world!")`    | ![Bright blue text color in terminal](assets/text_blue_196x16.png)       |
+| ![Cyan](assets/swatch_cyan_16x16.png)       | `format!("{CYAN}Hello, world!")`    | ![Bright cyan text color in terminal](assets/text_cyan_196x16.png)       |
+| ![White](assets/swatch_white_16x16.png)     | `format!("{WHITE}Hello, world!")`   | ![Bright white text color in terminal](assets/text_white_196x16.png)     |
+| ![Black](assets/swatch_black_16x16.png)     | `format!("{BLACK}Hello, world!")`   | ![Bright black text color in terminal](assets/text_black_196x16.png)     |
+| ![Dim green](assets/swatch_dim_green_16x16.png)        | `format!("{DIM_GREEN}Hello, world!")`          | ![Green text color in terminal](assets/text_dim_green_196x16.png)                   |
+| ![Dim yellow](assets/swatch_dim_yellow_16x16.png)      | `format!("{DIM_YELLOW}Hello, world!")`         | ![Yellow text color in terminal](assets/text_dim_yellow_196x16.png)                 |
+| ![Dim red](assets/swatch_dim_red_16x16.png)            | `format!("{DIM_RED}Hello, world!")`            | ![Red text color in terminal](assets/text_dim_red_196x16.png)                       |
+| ![Dim magenta](assets/swatch_dim_magenta_16x16.png)    | `format!("{DIM_MAGENTA}Hello, world!")`        | ![Magenta text color in terminal](assets/text_dim_magenta_196x16.png)               |
+| ![Dim blue](assets/swatch_dim_blue_16x16.png)          | `format!("{DIM_BLUE}Hello, world!")`           | ![Blue text color in terminal](assets/text_dim_blue_196x16.png)                     |
+| ![Dim cyan](assets/swatch_dim_cyan_16x16.png)          | `format!("{DIM_CYAN}Hello, world!")`           | ![Cyan text color in terminal](assets/text_dim_cyan_196x16.png)                     |
+| ![Dim white](assets/swatch_dim_white_16x16.png)        | `format!("{DIM_WHITE}Hello, world!")`          | ![White text color in terminal](assets/text_dim_white_196x16.png)                   |
+| ![Dim black](assets/swatch_dim_black_16x16.png)        | `format!("{DIM_BLACK}Hello, world!")`          | ![Black text color in terminal](assets/text_dim_black_196x16.png)                   |
 
 ## Background
 
