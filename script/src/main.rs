@@ -86,7 +86,7 @@ fn main() -> Result<()> {
         let font = ab_glyph::FontArc::try_from_slice(include_bytes!(font_path!()))
             .map_err(|err| format!("failed to load font at {}: {err}", font_path!()))?;
 
-        const TEXT_CONTAINER_WIDTH: u32 = 196;
+        const TEXT_CONTAINER_WIDTH: u32 = 164;
         const TEXT_CONTAINER_HEIGHT: u32 = 16;
 
         let mut bg_text = image::RgbImage::from_pixel(
