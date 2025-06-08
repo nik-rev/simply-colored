@@ -90,7 +90,7 @@ fn main() -> Result<()> {
         let mut fg_text = image::RgbImage::from_pixel(
             TEXT_CONTAINER_WIDTH,
             TEXT_CONTAINER_HEIGHT,
-            Rgb([197, 200, 198]),
+            Rgb([29, 31, 33]),
         );
 
         const TEXT_SCALE: f32 = 18.0;
@@ -100,7 +100,7 @@ fn main() -> Result<()> {
 
         draw_text_mut(
             &mut bg_text,
-            Rgb([197, 200, 198]),
+            Rgb([29, 31, 33]),
             (TEXT_CONTAINER_WIDTH / 2 - text_width / 2) as i32,
             0,
             TEXT_SCALE,
