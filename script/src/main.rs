@@ -94,7 +94,7 @@ fn main() -> Result<()> {
         );
 
         const TEXT_SCALE: f32 = 18.0;
-        const TEXT: &str = "Hello, world!";
+        const TEXT: &str = "Simply colored!";
 
         let (text_width, _text_height) = text_size(TEXT_SCALE, &font, TEXT);
 
