@@ -68,13 +68,17 @@ All effects can be prefixed with `NO_` to disable e.g. `NO_BOLD`.
 
 ## Extra
 
-If you want links in the terminal, use:
+If you want links in the terminal, all you need is:
 
 ```rust
 fn hyperlink<D: core::fmt::Display>(link: D, text: D) -> String {
     format!("\x1b]8;;{link}\x1b\\{text}\x1b]8;;\x1b\\")
 }
+```
 
+Example usage:
+
+```rust
 println!(
     "Check out simply_colored on {}!",
     hyperlink(
