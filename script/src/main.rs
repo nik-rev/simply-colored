@@ -28,14 +28,6 @@ pub enum Color {
 }
 
 impl Color {
-    /// What color should text be, if `self` is the background
-    fn text_color(self) -> [u8; 3] {
-        match self {
-            Color::Black | Color::DimBlack => [197, 200, 198],
-            _ => [29, 31, 33],
-        }
-    }
-
     /// `[Red, Green, Blue]` for this color
     fn rgb(self) -> [u8; 3] {
         match self {
@@ -98,7 +90,7 @@ fn main() -> Result<()> {
         let mut fg_text = image::RgbImage::from_pixel(
             TEXT_CONTAINER_WIDTH,
             TEXT_CONTAINER_HEIGHT,
-            Rgb(color.text_color()),
+            Rgb([197, 200, 198]),
         );
 
         const TEXT_SCALE: f32 = 18.0;
@@ -108,7 +100,7 @@ fn main() -> Result<()> {
 
         draw_text_mut(
             &mut bg_text,
-            Rgb(color.text_color()),
+            Rgb([197, 200, 198]),
             (TEXT_CONTAINER_WIDTH / 2 - text_width / 2) as i32,
             0,
             TEXT_SCALE,
