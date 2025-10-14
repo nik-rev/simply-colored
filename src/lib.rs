@@ -11,6 +11,8 @@
 //! simply-colored = "0.1"
 //! ```
 //!
+//! All this crate contains is a few dozen `const`ants corresponding to particular ANSI escape codes.
+//!
 //! # Usage
 //!
 //! ```rust
