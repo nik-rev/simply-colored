@@ -1,5 +1,7 @@
 //! Serves as a test for the crate
 
+extern crate simply_colored;
+
 use simply_colored::*;
 
 macro_rules! test {
