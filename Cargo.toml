@@ -1,11 +1,12 @@
 [package]
 name = "simply_colored"
 version = "0.1.0"
-edition = "2024"
+edition = "2015"
+rust-version = "1.0"
 repository = "https://github.com/nik-rev/simply-colored"
 homepage = "https://github.com/nik-rev/simply-colored"
+authors = ["Nik Revenco <pm@nikrev.com>"]
 description = "The simplest crate in existence for terminal colors"
-keywords = ["ansi", "terminal", "color", "no_std"]
+keywords = ["ansi", "terminal", "color", "no_std", "termcolor"]
+categories = ["command-line-interface", "command-line-utilities", "development-tools", "value-formatting", "visualization"]
 license = "MIT OR Apache-2.0"
-
-[dependencies]
