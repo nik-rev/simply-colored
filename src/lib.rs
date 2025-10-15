@@ -79,7 +79,20 @@
 //!
 //! All effects can be prefixed with `NO_` to disable e.g. `NO_BOLD`.
 //!
-//! ## Extra
+//! # Remove colors when they are not supported
+//!
+//! You can use the `anstream` crate to remove colors when they aren't supported:
+//!
+//! ```rust
+//! # extern crate anstream;
+//! use anstream::println;
+//! use simply_colored::*;
+//!
+//! println!("My number is {GREEN}10{RESET}!");
+//! println!("My number is not {RED}4{RESET}!");
+//! ```
+//!
+//! # Links
 //!
 //! If you want links in the terminal, all you need is:
 //!
@@ -92,6 +105,9 @@
 //! Example usage:
 //!
 //! ```rust
+//! # fn hyperlink(link: impl core::fmt::Display, text: impl core::fmt::Display) -> String {
+//! #     format!("\x1b]8;;{link}\x1b\\{text}\x1b]8;;\x1b\\")
+//! # }
 //! println!(
 //!     "Check out simply_colored on {}!",
 //!     hyperlink(

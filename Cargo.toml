@@ -10,3 +10,7 @@ description = "The simplest crate in existence for terminal colors"
 keywords = ["ansi", "terminal", "color", "no_std", "termcolor"]
 categories = ["command-line-interface", "command-line-utilities", "development-tools", "value-formatting", "visualization"]
 license = "MIT OR Apache-2.0"
+
+[dev-dependencies]
+# used in doc example
+anstream = "0.6"
