@@ -62,7 +62,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 
 [[package]]
 name = "simply_colored"
-version = "0.1.3"
+version = "0.1.4"
 dependencies = [
  "anstream 0.6.21 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
