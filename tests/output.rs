@@ -18,6 +18,16 @@ macro_rules! test {
     }};
 }
 
+macro_rules! test_single_reset {
+    ($($STYLE:ident $NO_STYLE:ident),*) => {
+        {{$(
+        print!("{}", $STYLE);
+        print!(stringify!($STYLE));
+        println!("{}", $NO_STYLE);
+    )*}}
+    };
+}
+
 fn main() {
     test! {
         DIM_RED BG_DIM_RED RED BG_RED
@@ -35,7 +45,15 @@ fn main() {
         DIM_WHITE BG_DIM_WHITE WHITE BG_WHITE
 
         DIM_DEFAULT BG_DIM_DEFAULT DEFAULT BG_DEFAULT
-
-        BOLD DIM ITALIC UNDERLINE BLINK REVERSE HIDE STRIKETHROUGH
     }
+    test_single_reset!(
+        BOLD NO_BOLD,
+        DIM NO_DIM,
+        ITALIC NO_ITALIC,
+        UNDERLINE NO_UNDERLINE,
+        BLINK NO_BLINK,
+        REVERSE NO_REVERSE,
+        HIDE NO_HIDE,
+        STRIKETHROUGH NO_STRIKETHROUGH
+    )
 }

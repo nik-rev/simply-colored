@@ -124,7 +124,7 @@ pub const RESET: &str = "\x1b[0m";
 /// Following text will be bold
 pub const BOLD: &str = "\x1b[1m";
 /// Following text will NOT be bold
-pub const NO_BOLD: &str = "\x1b[21m";
+pub const NO_BOLD: &str = "\x1b[22m";
 
 /// Following text will be dim
 pub const DIM: &str = "\x1b[2m";
