@@ -10,7 +10,7 @@ edit `lib.rs` instead, then re-run `cargo rdme` to re-generate this file
 [![crates.io](https://img.shields.io/crates/v/simply_colored?style=flat-square&logo=rust)](https://crates.io/crates/simply_colored)
 [![docs.rs](https://img.shields.io/badge/docs.rs-simply_colored-blue?style=flat-square&logo=docs.rs)](https://docs.rs/simply_colored)
 ![license](https://img.shields.io/badge/license-Apache--2.0_OR_MIT-blue?style=flat-square)
-![msrv](https://img.shields.io/badge/msrv-1.17-blue?style=flat-square&logo=rust)
+![msrv](https://img.shields.io/badge/msrv-1.70-blue?style=flat-square&logo=rust)
 [![github](https://img.shields.io/github/stars/nik-rev/simply-colored)](https://github.com/nik-rev/simply-colored)
 
 This crate is the simplest yet ergonomic way to add color to your terminal.
