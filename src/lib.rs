@@ -1,4 +1,4 @@
-#![doc = nik_rev::badges!("simply-colored")]
+#![doc = nik_rev::badges!(repo = "simply-colored")]
 //!
 //! This crate is the simplest yet ergonomic way to add color to your terminal.
 //!
