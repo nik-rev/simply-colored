@@ -9,6 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 [Unreleased]: https://github.com/nik-rev/simply-colored/compare/v0.1.4...HEAD
 
+- Documentation improvements
+
 ### Changed
 
 - Update MSRV to 1.70

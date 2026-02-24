@@ -1,8 +1,8 @@
-#![doc = nik_rev::badges!(repo = "simply-colored")]
+#![doc = include_str!(concat!(env!("OUT_DIR"), "/GENERATED_BADGES"))]
 //!
 //! This crate is the simplest yet ergonomic way to add color to your terminal.
 //!
-#![doc = nik_rev::add_dependency!()]
+#![doc = include_str!(concat!(env!("OUT_DIR"), "/GENERATED_ADD_DEP"))]
 //!
 //! All this crate contains is a few dozen `const`ants corresponding to particular ANSI escape codes.
 //!
