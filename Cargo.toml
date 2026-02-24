@@ -1,6 +1,6 @@
 [package]
 name = "simply_colored"
-version = "0.1.4"
+version = "0.1.5"
 edition = "2015"
 rust-version = "1.70"
 repository = "https://github.com/nik-rev/simply-colored"
