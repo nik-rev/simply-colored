@@ -19,7 +19,7 @@ cargo-reedme: info-end -->
 [![docs.rs](https://img.shields.io/docsrs/simply_colored?style=flat-square&logo=docs.rs)](https://docs.rs/simply_colored)
 ![license](https://img.shields.io/badge/license-Apache--2.0_OR_MIT-blue?style=flat-square)
 ![msrv](https://img.shields.io/badge/msrv-1.70-blue?style=flat-square&logo=rust)
-[![github](https://img.shields.io/github/stars/nik-rev/simply_colored)](https://github.com/nik-rev/simply_colored)
+[![github](https://img.shields.io/github/stars/nik-rev/simply-colored)](https://github.com/nik-rev/simply-colored)
 
 This crate is the simplest yet ergonomic way to add color to your terminal.
 
