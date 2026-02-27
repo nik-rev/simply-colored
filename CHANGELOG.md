@@ -9,6 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 [Unreleased]: https://github.com/nik-rev/simply-colored/compare/v0.1.5...HEAD
 
+- Documentation improvements
+
 ## [v0.1.5] - 2026-02-24
 
 [v0.1.5]: https://github.com/nik-rev/simply-colored/compare/v0.1.4...v0.1.5

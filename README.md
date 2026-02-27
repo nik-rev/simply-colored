@@ -19,7 +19,7 @@ cargo-reedme: info-end -->
 [![docs.rs](https://img.shields.io/docsrs/simply_colored?style=flat-square&logo=docs.rs)](https://docs.rs/simply_colored)
 ![license](https://img.shields.io/badge/license-Apache--2.0_OR_MIT-blue?style=flat-square)
 ![msrv](https://img.shields.io/badge/msrv-1.70-blue?style=flat-square&logo=rust)
-[![github](https://img.shields.io/github/stars/nik-rev/simply-colored)](https://github.com/nik-rev/simply-colored)
+[![github](https://img.shields.io/github/stars/nik-rev/simply_colored)](https://github.com/nik-rev/simply_colored)
 
 This crate is the simplest yet ergonomic way to add color to your terminal.
 
@@ -29,7 +29,7 @@ simply_colored = "0.1"
 
 All this crate contains is a few dozen `const`ants corresponding to particular ANSI escape codes.
 
-# Usage
+## Usage
 
 ```rust
 use simply_colored::*;
@@ -37,7 +37,7 @@ use simply_colored::*;
 println!("{BLUE}{BOLD}Simply colored!")
 ```
 
-## Foreground
+### Foreground
 
 | Color                                                                                                                | Type                                   | To get                                                                                                                                                                             |
 | -----                                                                                                                | ------------------                     | -------                                                                                                                                                                            |
@@ -58,7 +58,7 @@ println!("{BLUE}{BOLD}Simply colored!")
 | ![Dim white](https://raw.githubusercontent.com/nik-rev/simply-colored/main/assets/swatch_dim_white_16x16.png)        | `{DIM_WHITE}Simply colored!`             | ![Dim white text color in terminal](https://raw.githubusercontent.com/nik-rev/simply-colored/main/assets/fg_text_dim_white_164x16.png)                                             |
 | ![Dim black](https://raw.githubusercontent.com/nik-rev/simply-colored/main/assets/swatch_dim_black_16x16.png)        | `{DIM_BLACK}Simply colored!`             | ![Dim black text color in terminal](https://raw.githubusercontent.com/nik-rev/simply-colored/main/assets/fg_text_dim_black_164x16.png)                                             |
 
-## Background
+### Background
 
 | Color                                                                                                                | Type                                   |  To get                                                                                                                                                                            |
 | -----                                                                                                                | ------------------                     | -------                                                                                                                                                                            |
@@ -79,7 +79,7 @@ println!("{BLUE}{BOLD}Simply colored!")
 | ![Dim white](https://raw.githubusercontent.com/nik-rev/simply-colored/main/assets/swatch_dim_white_16x16.png)        | `{BG_DIM_WHITE}Simply colored!`          | ![Dim white text color in terminal](https://raw.githubusercontent.com/nik-rev/simply-colored/main/assets/bg_text_dim_white_164x16.png)                                             |
 | ![Dim black](https://raw.githubusercontent.com/nik-rev/simply-colored/main/assets/swatch_dim_black_16x16.png)        | `{BG_DIM_BLACK}Simply colored!`          | ![Dim black text color in terminal](https://raw.githubusercontent.com/nik-rev/simply-colored/main/assets/bg_text_dim_black_164x16.png)                                             |
 
-## Effects
+### Effects
 
 | Effect                    | Type                               |
 | ------                    | -----                              |
@@ -95,7 +95,7 @@ println!("{BLUE}{BOLD}Simply colored!")
 
 All effects can be prefixed with `NO_` to disable e.g. `NO_BOLD`.
 
-# Remove colors when they are not supported
+## Remove colors when they are not supported
 
 You can use the `anstream` crate to remove colors when they aren’t supported:
 
@@ -107,7 +107,7 @@ println!("My number is {GREEN}10{RESET}!");
 println!("My number is not {RED}4{RESET}!");
 ```
 
-# Links
+## Links
 
 If you want links in the terminal, all you need is:
 
