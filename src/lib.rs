@@ -80,7 +80,7 @@
 //!
 //! # Remove colors when they are not supported
 //!
-//! You can use the `anstream` crate to remove colors when they aren't supported:
+//! You can use the [`anstream`](https://docs.rs/anstream/latest/anstream/) crate to remove colors when they aren't supported:
 //!
 //! ```rust
 //! # extern crate anstream;
@@ -91,29 +91,52 @@
 //! println!("My number is not {RED}4{RESET}!");
 //! ```
 //!
-//! # Links
+//! # Extras
 //!
-//! If you want links in the terminal, all you need is:
+//! These can't be neatly represented using constants, so they're not a part of this library. They are included here for your own convenience!
 //!
-//! ```rust
-//! fn hyperlink(link: impl core::fmt::Display, text: impl core::fmt::Display) -> String {
+//! ## Links
+//!
+//! If you want links in the terminal, you can use this:
+//!
+//! ```
+//! fn link(text: &str, link: &str) -> String {
 //!     format!("\x1b]8;;{link}\x1b\\{text}\x1b]8;;\x1b\\")
 //! }
 //! ```
 //!
 //! Example usage:
 //!
-//! ```rust
-//! # fn hyperlink(link: impl core::fmt::Display, text: impl core::fmt::Display) -> String {
+//! ```
+//! # fn link(link: impl core::fmt::Display, text: impl core::fmt::Display) -> String {
 //! #     format!("\x1b]8;;{link}\x1b\\{text}\x1b]8;;\x1b\\")
 //! # }
+//! let github = link("GitHub", "https://github.com/nik-rev/simply-colored");
+//!
 //! println!(
-//!     "Check out simply_colored on {}!",
-//!     hyperlink(
-//!         "https://github.com/nik-rev/simply-colored",
-//!         "GitHub"
-//!     )
+//!     "Check out simply_colored on {github}!",
 //! );
+//! ```
+//!
+//! ## RGB Colors
+//!
+//! If you want arbitrary RGB colors, you can use this:
+//!
+//! ```
+//! fn rgb(r: u8, g: u8, b: u8) -> String {
+//!     format!("ESC[38;2;{r};{g};{b}m")
+//! }
+//! ```
+//!
+//! Example usage:
+//!
+//! ```
+//! # fn rgb(r: u8, g: u8, b: u8) -> String {
+//! #     format!("ESC[38;2;{r};{g};{b}m")
+//! # }
+//! let color = rgb(0xc0, 0xff, 0xee);
+//!
+//! println!(So very {color}ful{RESET}!);
 //! ```
 #![no_std]
 
