@@ -137,7 +137,7 @@ If you want arbitrary RGB colors, you can use this:
 
 ```rust
 fn rgb(r: u8, g: u8, b: u8) -> String {
-    format!("ESC[38;2;{r};{g};{b}m")
+    format!("\x1b[38;2;{r};{g};{b}m")
 }
 ```
 
@@ -146,7 +146,7 @@ Example usage:
 ```rust
 let color = rgb(0xc0, 0xff, 0xee);
 
-println!(So very {color}ful{RESET}!);
+println!("So very {color}ful{RESET}!");
 ```
 
 <!-- cargo-reedme: end -->
